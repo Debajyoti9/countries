@@ -68,3 +68,41 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+PROJECT NAME: ASIAN COUNTRY 
+
+In this project the web page will show all the related data of all asian countries ----
+like name, capital, flag(display image for each country), region,subregion, population, borders & languages of the country.
+
+
+This project is made by react-js
+
+First Import react in my project i use 
+npx create-react-app countries(this is my web app name)
+
+now install all the dependencies like in my case i use
+
+for icons - react-icons
+command- npm i react-icons
+
+for react router
+npm i react-router-dom
+
+for run the react app i use npm start
+
+All the details of this web app how it's look like
+![loading](https://user-images.githubusercontent.com/51468747/134782603-9c9309b6-f233-4d4b-8233-d05eaeee3b92.png)
+
+Dash board Page
+
+![dashboard](https://user-images.githubusercontent.com/51468747/134782617-0169d0d2-1945-4a16-bd36-497a09443867.png)
+
+If anyone hover over the card then he/she can see all the data
+![hover](https://user-images.githubusercontent.com/51468747/134782634-a734c2e1-8c4e-4bf5-a983-a6d748ee8577.png)
+
+How to use routing in react for that i created a extra about page
+
+![aboutPage](https://user-images.githubusercontent.com/51468747/134782679-1c9672e1-e5cf-4a55-b7d0-c236012dffae.png)
