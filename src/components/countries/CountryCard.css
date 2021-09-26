@@ -1,0 +1,85 @@
+.countryCard{
+    background-color: transparent;
+    width: 380px;
+    height: 380px;
+    perspective: 10000px;
+    cursor: pointer;
+    margin-bottom:2rem;
+    /* border: 2px solid #fff; */
+    border-radius: 0.3rem;
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+.countryCard_inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition:transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0px 4px  8px 0 rgba(0,0,0,0.2);
+}
+
+.countryCard:hover .countryCard_inner{
+    transform: rotateY(180deg);
+}
+
+.countryCard_front,.countryCard_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+}
+
+.countryCard_front{
+    background-color: rgba(18, 31, 26, 0.473);
+    color: aliceblue;
+}
+
+.countryCard_front img{
+    width: 200px;
+    height: 180px;
+    margin-top: 3.5rem;
+}
+.countryCard_front h3{
+    margin-top: 1rem;
+}
+.countryCard_front h3 span{
+   font-weight: bold;
+   color: #700931;
+}
+
+.countryCard_back{
+    background-color: #123441;
+    color: #fff;
+    transform: rotateY(180deg);
+    padding: 4rem;
+}
+
+.countryCard_back h3 span{
+    color: #facce2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.countryCard_back p{
+    margin-left: 0.3rem;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.countryCard_back_capital,.countryCard_back_region,.countryCard_back_subregion,.countryCard_back_population,.countryCard_back_borders.countryCard_back_languages{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+@media (max-width:365px) {
+    .countryCard_front img{
+        width: 214px;
+       height: 140px;
+       margin-top: 6rem;
+    }
+    .countryCard_front h3 {
+        font-size: 1.12rem;
+     }
+}
